@@ -15,5 +15,7 @@ int main(int argc, char** argv) {
 	cout << "rebase test: in master, this is bug-fixed" << endl;
 	cout << "rebaced test: in dev, this is the new-feature" << endl;
 
+	cout << "This is the fix2 branch" << endl;
+
 	return 0;
 }
