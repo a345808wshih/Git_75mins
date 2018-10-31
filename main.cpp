@@ -12,6 +12,7 @@ int main(int argc, char** argv) {
 	cout << "This is the master branch: stash test" << endl;
 	
 	cout << "modified by user2" << endl;
+	cout << "rebase test: in master" << endl;
 
 	return 0;
 }
