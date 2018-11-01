@@ -16,6 +16,10 @@ int main(int argc, char** argv) {
 	cout << "rebaced test: in dev, this is the new-feature" << endl;
 
 	cout << "This is the fix2 branch" << endl;
+	
+	
+	
+	cout << "github test: This is feature1 from user1" << endl;
 
 	return 0;
 }
