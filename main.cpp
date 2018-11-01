@@ -20,6 +20,7 @@ int main(int argc, char** argv) {
 	
 	
 	cout << "github test: This is feature1 from user1" << endl;
+	cout << "github test: This is feature2 from user1" << endl;
 
 	return 0;
 }
