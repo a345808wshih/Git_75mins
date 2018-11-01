@@ -3,12 +3,33 @@
 using namespace std;
 
 class Calculator {
+private:
+
+public:
+	int sum(vector<int> &nums) {
+	    int sum = 0;
+		for (auto num : nums) {
+		    sum += num;
+		}
+		return sum;
+	}
+	
+	int aver(vector<int> &nums) {
+	    return sum(nums) / nums.size();
+	}
 
 
 };
 
 
 int main(int argc, char** argv) {
+    // unit test for Calculator::sum()
+	//               Calculator::aver()
+	vector<int> nums = {1, 3};
+	Calculator obj;
+	cout << obj.sum(nums) << endl;
+	cout << obj.aver(nums) << endl;
+
 
 	cout << "Hello World" << endl;
 	cout << "Hello WSHIH" << endl;
