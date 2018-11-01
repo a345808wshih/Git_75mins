@@ -71,5 +71,6 @@ int main(int argc, char** argv) {
 	cout << "github test: feature1 bugs fixed" << endl;
 
 
+	cout << "cluster test: user4" << endl;
 	return 0;
 }
