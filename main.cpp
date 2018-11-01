@@ -14,8 +14,8 @@ public:
 		return sum;
 	}
 	
-	static int aver(const vector<int> &nums) {
-	    return sum(nums) / nums.size();
+	static double aver(const vector<int> &nums) {
+	    return sum(nums) * 1.0 / nums.size();
 	}
 
 	static int product(const vector<int> &nums) {
