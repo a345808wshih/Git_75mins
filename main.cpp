@@ -18,6 +18,13 @@ public:
 	    return sum(nums) / nums.size();
 	}
 
+	int product(vector<int> &nums) {
+	    int result = 1;
+		for (auto num : nums) {
+		    result *= num;
+		}
+		return result;
+	}
 
 };
 
