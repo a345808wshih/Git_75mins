@@ -25,6 +25,12 @@ public:
 		}
 		return result;
 	}
+	
+	void printNums(vector<int> &nums) {
+	    for (auto num : nums) {
+		    cout << num << endl;
+		}
+	}
 
 };
 
