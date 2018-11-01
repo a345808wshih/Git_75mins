@@ -6,7 +6,7 @@ class Calculator {
 private:
 
 public:
-	int sum(vector<int> &nums) {
+	static int sum(const vector<int> &nums) {
 	    int sum = 0;
 		for (auto num : nums) {
 		    sum += num;
@@ -14,11 +14,11 @@ public:
 		return sum;
 	}
 	
-	int aver(vector<int> &nums) {
+	static int aver(const vector<int> &nums) {
 	    return sum(nums) / nums.size();
 	}
 
-	int product(vector<int> &nums) {
+	static int product(const vector<int> &nums) {
 	    int result = 1;
 		for (auto num : nums) {
 		    result *= num;
@@ -26,7 +26,7 @@ public:
 		return result;
 	}
 	
-	void printNums(vector<int> &nums) {
+	static void printNums(const vector<int> &nums) {
 	    for (auto num : nums) {
 		    cout << num << endl;
 		}
@@ -38,10 +38,13 @@ public:
 int main(int argc, char** argv) {
     // unit test for Calculator::sum()
 	//               Calculator::aver()
+	//               Calculator::product()
+	//               Calculator::printNums()
 	vector<int> nums = {1, 3};
-	Calculator obj;
-	cout << obj.sum(nums) << endl;
-	cout << obj.aver(nums) << endl;
+	cout << Calculator::sum(nums) << endl;
+	cout << Calculator::aver(nums) << endl;
+	cout << Calculator::product(nums) << endl;
+	cout << Calculator::printNums() << endl;
 
 
 	cout << "Hello World" << endl;
